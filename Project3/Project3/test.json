@@ -1,0 +1,36 @@
+{
+  "class": "passArea",
+  "passArea": {
+    "class": "passArea",
+    "pageHeader": {
+      "text": "パスワード変更"
+    },
+    "postPass": {
+      "newPassArea": {
+        "passLabel": {
+          "class": "passLabel inlineBlock",
+          "text": "新しいパスワード"
+        },
+        "passTextbox": {
+          "class": "passTextbox inlineBlock newPassword",
+          "type": "password",
+          "name": "newPass"
+        }
+      },
+      "confirmArea": {
+        "passLabel": {
+          "class": "passLabel inlineBlock",
+          "text": "確認(再入力)"
+        },
+        "passTextbox": {
+          "class": "passTextbox inlineBlock confirmPassword",
+          "type": "password",
+          "name": "password"
+        }
+      }
+    }
+  },
+  "updatePassword": {
+    "db_setQuery": "CALL updateUserPassword('password', 'userId');"
+  }
+}
